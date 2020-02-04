@@ -3,9 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A3B0511-4C30-4E4D-9CD7-E6C410DCE999}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{DA6233AE-A56F-4BD5-B03A-90682359FB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCoreExample.Application.WebHost", "src\Applications\OrchardCoreExample.Application.WebHost\OrchardCoreExample.Application.WebHost.csproj", "{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA6233AE-A56F-4BD5-B03A-90682359FB80} = {9A3B0511-4C30-4E4D-9CD7-E6C410DCE999}
+		{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5} = {DA6233AE-A56F-4BD5-B03A-90682359FB80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C4D2627-639A-4385-AA64-A984D7C3FA9E}
