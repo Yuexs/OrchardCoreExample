@@ -1,0 +1,40 @@
+﻿@model WeCharMiniProgramSettingViewModel;
+
+<h3>@T["微信小程序对接参数设置"]</h3>
+
+
+<div class="form-group row" asp-validation-class-for="WxOpenAppId">
+    <div class="col-lg">
+        <label asp-for="WxOpenAppId">@T["小程序AppId"]</label>
+        <input asp-for="WxOpenAppId" class="form-control" autocomplete="off" />
+        <span asp-validation-for="WxOpenAppId"></span>
+        <span class="hint">@T["小程序AppId可以在微信小程序管理查看."]</span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="WxOpenAppSecret">
+    <div class="col-lg">
+        <label asp-for="WxOpenAppSecret">@T["小程序AppSecret"]</label>
+        <input asp-for="WxOpenAppSecret" class="form-control" value="@Model.WxOpenAppSecret" autocomplete="off" />
+        <span asp-validation-for="WxOpenAppSecret"></span>
+        <span class="hint">@T["小程序AppSecret可以在微信小程序管理查看."]</span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="WxOpenToken">
+    <div class="col-lg">
+        <label asp-for="WxOpenToken">@T["小程序Token"]</label>
+        <input asp-for="WxOpenToken" class="form-control" value="@Model.WxOpenToken" autocomplete="off" />
+        <span asp-validation-for="WxOpenAppSecret"></span>
+        <span class="hint">@T["小程序Token可以在微信小程序管理查看."]</span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="WxOpenEncodingAesKey">
+    <div class="col-lg">
+        <label asp-for="WxOpenEncodingAesKey">@T["小程序EncodingAesKey"]</label>
+        <input asp-for="WxOpenEncodingAesKey" class="form-control" value="@Model.WxOpenEncodingAesKey" autocomplete="off" />
+        <span asp-validation-for="WxOpenEncodingAesKey"></span>
+        <span class="hint">@T["小程序EncodingAesKey可以在微信小程序管理查看."]</span>
+    </div>
+</div>

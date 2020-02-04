@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Modules\OrchardCoreExample.Settings.Module\OrchardCoreExample.Settings.Module.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="wwwroot\.placeholder">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
