@@ -7,11 +7,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A3B0511-4C3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{DA6233AE-A56F-4BD5-B03A-90682359FB80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCoreExample.Application.WebHost", "src\Applications\OrchardCoreExample.Application.WebHost\OrchardCoreExample.Application.WebHost.csproj", "{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.Application.WebHost", "src\Applications\OrchardCoreExample.Application.WebHost\OrchardCoreExample.Application.WebHost.csproj", "{09B42DD4-1F06-4B99-A97F-84E8BFCC7CF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCoreExample.Settings.Module", "src\Modules\OrchardCoreExample.Settings.Module\OrchardCoreExample.Settings.Module.csproj", "{078E15EC-8EFE-4D27-A4DA-4106DE31974B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.Settings.Module", "src\Modules\OrchardCoreExample.Settings.Module\OrchardCoreExample.Settings.Module.csproj", "{078E15EC-8EFE-4D27-A4DA-4106DE31974B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MarkDown", "MarkDown", "{9B5C1E2A-EF87-4174-B52F-D4E4DF1CCA5E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
