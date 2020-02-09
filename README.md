@@ -8,3 +8,4 @@ OrchardCore应用示例
 |--------|--------|----|
 |[OrchardCoreExample.Application.WebHost](src/Applications/OrchardCoreExample.Application.WebHost)						|Demo宿主|  主项目
 |[OrchardCoreExample.Settings.Module](src/Modules/OrchardCoreExample.Settings.Module)		|示例设置模块| 包含权限,导航,设置功能演示
+|[OrchardCoreExample.WebApi.Module](src/Modules/OrchardCoreExample.WebApi.Module)		|webapi示例模块|包含权限,webapi配合openid授权验证
