@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.Settings.Module\OrchardCoreExample.Settings.Module.csproj" />
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.WebApi.Module\OrchardCoreExample.WebApi.Module.csproj" />
+    <ProjectReference Include="..\..\Modules\OrchardCoreExample.Workflows.Module\OrchardCoreExample.Workflows.Module.csproj" />
   </ItemGroup>
 
   <ItemGroup>

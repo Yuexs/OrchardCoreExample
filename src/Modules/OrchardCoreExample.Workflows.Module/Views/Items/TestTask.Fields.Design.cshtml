@@ -1,0 +1,6 @@
+﻿@using OrchardCore.Workflows.Helpers
+@model OrchardCore.Workflows.ViewModels.ActivityViewModel<OrchardCoreExample.Workflows.Module.Workflows.Activities.TestTask>
+
+<header>
+    <h4><i class="fa fa-exclamation-triangle"></i>@Model.Activity.GetTitleOrDefault(() => T["测试任务"])</h4>
+</header>

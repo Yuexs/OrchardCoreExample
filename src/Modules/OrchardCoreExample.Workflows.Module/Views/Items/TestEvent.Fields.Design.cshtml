@@ -1,0 +1,5 @@
+﻿@model ActivityViewModel<TestEvent>
+
+<header>
+    <h4><i class="fa fa-id-card"></i>@Model.Activity.GetTitleOrDefault(() => T["测试事件"])</h4>
+</header>
