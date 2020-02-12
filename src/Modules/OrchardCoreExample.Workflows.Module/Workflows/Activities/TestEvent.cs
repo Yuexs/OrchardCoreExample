@@ -10,7 +10,7 @@ namespace OrchardCoreExample.Workflows.Module.Workflows.Activities
     {
         protected readonly IStringLocalizer S;
 
-        public TestEvent(IStringLocalizer localizer)
+        public TestEvent(IStringLocalizer<TestEvent> localizer)
         {
             S = localizer;
         }
