@@ -2,55 +2,85 @@
 > 模块定义了一个事件以及一个任务,
 > 事件通过webapi触发
 
-#### 1.创建`Manifest.cs`文件定义模块信息
-> 工作流模块依赖`OrchardCore.Workflows`模块
+#### 1.事件触发
+> 事件触发使用webapi\
+> 开发者可以参考更换为其他方式,这里仅供测试\
+> 地址http://127.0.0.1:5000/api/demo2/test
+
+DemoController.cs文件内容
 ```
-using OrchardCore.Modules.Manifest;
-[assembly: Module(
-    Name = "Workflows.Module",
-    Author = "Yuex.S",
-    Website = "https://gitee.com/YuexS/OrchardCoreExample",
-    Version = "1.0.0",
-    Description = "工作流模块",
-    Category = "Example",
-    Dependencies = new[]
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using OrchardCore.Workflows.Services;
+using OrchardCoreExample.Workflows.Module.Workflows.Activities;
+
+namespace OrchardCoreExample.Workflows.Module.Controllers
+{
+    [Route("api/demo2/[action]")]
+    [Authorize(AuthenticationSchemes = "Api"), IgnoreAntiforgeryToken, AllowAnonymous]
+    [ApiController]
+    public class DemoController: Controller
     {
-        "OrchardCore.Workflows"
+        private readonly IWorkflowManager _workflowManager;
+
+        public DemoController(IWorkflowManager workflowManager)
+        {
+            _workflowManager = workflowManager;
+        }
+
+        public IActionResult Test()
+        {
+            _workflowManager.TriggerEventAsync(nameof(TestEvent), new { json = "工作流测试" });
+            return Json(new {result = "已经触发工作流事件"});
+        }
+
     }
-)]
+}
+
 ```
 
-#### 2.创建`TestEvent.cs`文件定义一个测试事件
-> 工作流模块依赖`OrchardCore.Workflows`模块
+#### 2.任务执行
+> TestTask.cs文件内根据触发进行操作
 ```
-public class TestEvent : Activity, IEvent
+using System.Collections.Generic;
+using Microsoft.Extensions.Localization;
+using OrchardCore.Workflows.Abstractions.Models;
+using OrchardCore.Workflows.Activities;
+using OrchardCore.Workflows.Models;
+
+namespace OrchardCoreExample.Workflows.Module.Workflows.Activities
+{
+    public class TestTask: TaskActivity
     {
-        protected readonly IStringLocalizer S;
+        private readonly IStringLocalizer<TestTask> S;
 
-        public TestEvent(IStringLocalizer<TestEvent> localizer)
+        public TestTask(IStringLocalizer<TestTask> localizer)
         {
             S = localizer;
         }
 
-        public override string Name => nameof(TestEvent);
-        public override LocalizedString DisplayText => S["测试事件"];
+        public override string Name => nameof(TestTask);
+        public override LocalizedString DisplayText => S["测试任务"];
         public override LocalizedString Category => S["Demo"];
 
-        public override IEnumerable<Outcome> GetPossibleOutcomes(WorkflowExecutionContext workflowContext,
-            ActivityContext activityContext)
+        public override IEnumerable<Outcome> GetPossibleOutcomes(WorkflowExecutionContext workflowContext, ActivityContext activityContext)
         {
             return Outcomes(S["Done"]);
         }
 
         public override ActivityExecutionResult Execute(WorkflowExecutionContext workflowContext, ActivityContext activityContext)
         {
-            return Halt();
-        }
-
-        public override ActivityExecutionResult Resume(WorkflowExecutionContext workflowContext, ActivityContext activityContext)
-        {
+            // 执行任务
+            // workflowContext.Input 获取事件参数
             return Outcomes("Done");
         }
     }
+}
 ```
-未完成
+#### 3.安装模块并设置流程
+> 添加一个事件(测试事件)和任务(测试任务)\
+> 启用测试事件,并且添加流程线到测试任务
+
+![image](https://gitee.com/YuexS/OrchardCoreExample/raw/master/imgs/WX20200213-035846@2x.png)
+
+#### 4.访问api,将会触发当前流程
