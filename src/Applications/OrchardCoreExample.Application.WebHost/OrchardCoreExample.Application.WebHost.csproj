@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc1-10004" />
+    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-rc1-10004" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +18,9 @@
   <ItemGroup>
     <Content Update="wwwroot\.placeholder">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Localization\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
