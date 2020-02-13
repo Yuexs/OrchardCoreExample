@@ -15,12 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.Settings
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MarkDown", "MarkDown", "{9B5C1E2A-EF87-4174-B52F-D4E4DF1CCA5E}"
 	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.WebApi.Module", "src\Modules\OrchardCoreExample.WebApi.Module\OrchardCoreExample.WebApi.Module.csproj", "{0C08F8F0-ADD8-4A77-A944-F4FDD43C6BAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCoreExample.Workflows.Module", "src\Modules\OrchardCoreExample.Workflows.Module\OrchardCoreExample.Workflows.Module.csproj", "{623E5A36-39BE-4A72-AA88-D8E4EA23A861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.Workflows.Module", "src\Modules\OrchardCoreExample.Workflows.Module\OrchardCoreExample.Workflows.Module.csproj", "{623E5A36-39BE-4A72-AA88-D8E4EA23A861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
