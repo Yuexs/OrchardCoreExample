@@ -1,0 +1,34 @@
+﻿@model BookModelEntry
+
+<h1>@RenderTitleSegments(T["添加书籍 "])</h1>
+
+<div asp-validation-summary="ModelOnly"></div>
+<form asp-action="Create" method="post">
+    <div class="form-group" asp-validation-class-for="Title">
+        <label asp-for="Title">@T["标题"]</label>
+        <input asp-for="Title" class="form-control" autofocus />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group" asp-validation-class-for="Author">
+        <label asp-for="Author">@T["作者"]</label>
+        <input asp-for="Author" class="form-control" autofocus />
+        <span asp-validation-for="Author" class="text-danger"></span>
+    </div>
+    <div class="form-group" asp-validation-class-for="CoverPhotoUrl">
+        <label asp-for="CoverPhotoUrl">@T["封面地址"]</label>
+        <input asp-for="CoverPhotoUrl" class="form-control" autofocus />
+        <span asp-validation-for="CoverPhotoUrl" class="text-danger"></span>
+    </div>
+    <div class="form-group" asp-validation-class-for="Description">
+        <label asp-for="Description">@T["说明"]</label>
+        <input asp-for="Description" class="form-control" autofocus />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <fieldset>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">@T["保存"]</button>
+            <a class="btn btn-secondary" asp-route-action="Index">@T["取消"]</a>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,43 @@
+﻿@model BookIndexViewModel
+
+<h1>@RenderTitleSegments(T["书籍管理"])</h1>
+
+<nav class="admin-toolbar">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a asp-route-action="Create" class="btn btn-primary" role="button">@T["添加书籍"]</a>
+        </li>
+    </ul>
+</nav>
+
+@using (Html.BeginForm())
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th style="vertical-align: middle !important;text-align: center;">@T["标题"]</th>
+                <th style="vertical-align: middle !important;text-align: center;">@T["作者"]</th>
+                <th style="vertical-align: middle !important;text-align: center;">@T["封面地址"]</th>
+                <th style="vertical-align: middle !important;text-align: center;">@T["说明"]</th>
+                <th style="width:9%;vertical-align: middle !important;text-align: center;">@T["操作"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var entry in Model.Books)
+            {
+                <tr>
+                    <td>@entry.Title</td>
+                    <td>@entry.Author</td>
+                    <td>@entry.CoverPhotoUrl</td>
+                    <td>@entry.Description</td>
+                    <td style="vertical-align: middle !important;text-align: center;">
+                        <a asp-action="Edit" asp-route-id="@entry.Id" class="btn btn-primary btn-sm">@T["编辑"]</a>
+                        <a class="delete btn btn-danger btn-sm" asp-route-id="@entry.Id" role="button" asp-action="Delete" itemprop="UnsafeUrl RemoveUrl">@T["删除"]</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@await DisplayAsync(Model.Pager)

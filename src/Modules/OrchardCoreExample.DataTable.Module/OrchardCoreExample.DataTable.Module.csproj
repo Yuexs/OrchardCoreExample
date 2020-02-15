@@ -2,11 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
 
   <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="1.0.0-rc1-10004" />
     <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc1-10004" />
-    <PackageReference Include="OrchardCore.Navigation.Core" Version="1.0.0-rc1-10004" />
+    <PackageReference Include="OrchardCore.Navigation" Version="1.0.0-rc1-10004" />
   </ItemGroup>
 
 </Project>
