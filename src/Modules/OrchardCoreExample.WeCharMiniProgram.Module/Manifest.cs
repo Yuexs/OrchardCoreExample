@@ -7,5 +7,10 @@ using OrchardCoreExample.WeCharMiniProgram.Module;
     Website = "https://gitee.com/YuexS/OrchardCoreExample",
     Version = "1.0.0",
     Description = "微信小程序插件",
-    Category = "Example"
+    Category = "Example",
+    Dependencies = new[]
+    {
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.OpenId.Validation"
+    }
 )]
