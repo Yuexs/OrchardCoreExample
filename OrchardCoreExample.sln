@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.WebApi.M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.Workflows.Module", "src\Modules\OrchardCoreExample.Workflows.Module\OrchardCoreExample.Workflows.Module.csproj", "{623E5A36-39BE-4A72-AA88-D8E4EA23A861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCoreExample.DataTable.Module", "src\Modules\OrchardCoreExample.DataTable.Module\OrchardCoreExample.DataTable.Module.csproj", "{B78E50EE-0070-4B6C-9C5F-A25E344C543E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.DataTable.Module", "src\Modules\OrchardCoreExample.DataTable.Module\OrchardCoreExample.DataTable.Module.csproj", "{B78E50EE-0070-4B6C-9C5F-A25E344C543E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCoreExample.WeCharMiniProgram.Module", "src\Modules\OrchardCoreExample.WeCharMiniProgram.Module\OrchardCoreExample.WeCharMiniProgram.Module.csproj", "{81B48F78-9852-457F-8522-42FC03BB740D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{B78E50EE-0070-4B6C-9C5F-A25E344C543E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B78E50EE-0070-4B6C-9C5F-A25E344C543E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B78E50EE-0070-4B6C-9C5F-A25E344C543E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B48F78-9852-457F-8522-42FC03BB740D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B48F78-9852-457F-8522-42FC03BB740D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B48F78-9852-457F-8522-42FC03BB740D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B48F78-9852-457F-8522-42FC03BB740D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{0C08F8F0-ADD8-4A77-A944-F4FDD43C6BAD} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
 		{623E5A36-39BE-4A72-AA88-D8E4EA23A861} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
 		{B78E50EE-0070-4B6C-9C5F-A25E344C543E} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
+		{81B48F78-9852-457F-8522-42FC03BB740D} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C4D2627-639A-4385-AA64-A984D7C3FA9E}

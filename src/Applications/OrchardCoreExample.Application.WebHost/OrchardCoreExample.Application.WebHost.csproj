@@ -13,6 +13,7 @@
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.DataTable.Module\OrchardCoreExample.DataTable.Module.csproj" />
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.Settings.Module\OrchardCoreExample.Settings.Module.csproj" />
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.WebApi.Module\OrchardCoreExample.WebApi.Module.csproj" />
+    <ProjectReference Include="..\..\Modules\OrchardCoreExample.WeCharMiniProgram.Module\OrchardCoreExample.WeCharMiniProgram.Module.csproj" />
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.Workflows.Module\OrchardCoreExample.Workflows.Module.csproj" />
   </ItemGroup>
 
