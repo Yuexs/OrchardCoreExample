@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.DataTabl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCoreExample.WeCharMiniProgram.Module", "src\Modules\OrchardCoreExample.WeCharMiniProgram.Module\OrchardCoreExample.WeCharMiniProgram.Module.csproj", "{81B48F78-9852-457F-8522-42FC03BB740D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCore.Swagger.Abstractions", "src\Modules\OrchardCore.Swagger.Abstractions\OrchardCore.Swagger.Abstractions.csproj", "{6EB77D0D-401D-4133-81FB-6909A6BBCAF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Swagger.Abstractions", "src\Modules\OrchardCore.Swagger.Abstractions\OrchardCore.Swagger.Abstractions.csproj", "{6EB77D0D-401D-4133-81FB-6909A6BBCAF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCore.Swagger", "src\Modules\OrchardCore.Swagge\OrchardCore.Swagger.csproj", "{5D24132C-664F-4F81-AF50-129B7DDA02E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Swagger", "src\Modules\OrchardCore.Swagger\OrchardCore.Swagger.csproj", "{958A0B5B-792C-42E7-A364-F70E70DDB3F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +65,10 @@ Global
 		{6EB77D0D-401D-4133-81FB-6909A6BBCAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EB77D0D-401D-4133-81FB-6909A6BBCAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EB77D0D-401D-4133-81FB-6909A6BBCAF7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D24132C-664F-4F81-AF50-129B7DDA02E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D24132C-664F-4F81-AF50-129B7DDA02E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D24132C-664F-4F81-AF50-129B7DDA02E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D24132C-664F-4F81-AF50-129B7DDA02E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958A0B5B-792C-42E7-A364-F70E70DDB3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958A0B5B-792C-42E7-A364-F70E70DDB3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958A0B5B-792C-42E7-A364-F70E70DDB3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958A0B5B-792C-42E7-A364-F70E70DDB3F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,7 +83,7 @@ Global
 		{B78E50EE-0070-4B6C-9C5F-A25E344C543E} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
 		{81B48F78-9852-457F-8522-42FC03BB740D} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
 		{6EB77D0D-401D-4133-81FB-6909A6BBCAF7} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
-		{5D24132C-664F-4F81-AF50-129B7DDA02E6} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
+		{958A0B5B-792C-42E7-A364-F70E70DDB3F7} = {9C01A2ED-AF4B-4B2A-89F0-4A84AE6E5339}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C4D2627-639A-4385-AA64-A984D7C3FA9E}

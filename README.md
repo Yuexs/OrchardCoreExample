@@ -13,4 +13,4 @@ OrchardCore应用示例
 |[OrchardCoreExample.DataTable.Module](src/Modules/OrchardCoreExample.DataTable.Module)		|创建数据表|包含自定义表的创建,以及数据管理
 |[OrchardCoreExample.WeCharMiniProgram.Module](src/Modules/OrchardCoreExample.WeCharMiniProgram.Module)		|微信小程序后端实现|包含用户信息授权,解密手机号等,加入了OpenId权限
 |[OrchardCore.Swagger.Abstractions](src/Modules/OrchardCore.Swagger.Abstractions)		|Swagger.Abstractions|Swagger.Abstractions
-|[OrchardCore.Swagger](src/Modules/OrchardCore.Swagge)		|Swagger|Swagger
+|[OrchardCore.Swagger](src/Modules/OrchardCore.Swagger)		|Swagger|Swagger

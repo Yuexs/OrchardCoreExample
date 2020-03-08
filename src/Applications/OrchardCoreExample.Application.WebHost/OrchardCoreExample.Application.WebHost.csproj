@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Modules\OrchardCore.Swagge\OrchardCore.Swagger.csproj" />
+    <ProjectReference Include="..\..\Modules\OrchardCore.Swagger\OrchardCore.Swagger.csproj" />
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.DataTable.Module\OrchardCoreExample.DataTable.Module.csproj" />
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.Settings.Module\OrchardCoreExample.Settings.Module.csproj" />
     <ProjectReference Include="..\..\Modules\OrchardCoreExample.WebApi.Module\OrchardCoreExample.WebApi.Module.csproj" />
