@@ -15,4 +15,8 @@
     <PackageReference Include="OrchardCore.Navigation.Core" Version="1.0.0-rc1-10004" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OrchardCore.Swagger.Abstractions\OrchardCore.Swagger.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
