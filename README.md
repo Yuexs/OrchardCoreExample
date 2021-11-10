@@ -1,6 +1,6 @@
 # OrchardCoreExample
 
-OrchardCore应用示例
+OrchardCore应用示例 1.1.0
 
 ## 示例说明
 
