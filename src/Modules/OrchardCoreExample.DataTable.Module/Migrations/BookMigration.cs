@@ -1,5 +1,6 @@
 ﻿using OrchardCore.Data.Migration;
 using OrchardCoreExample.DataTable.Module.Indexes;
+using YesSql.Sql;
 
 namespace OrchardCoreExample.DataTable.Module.Migrations
 {
@@ -7,7 +8,7 @@ namespace OrchardCoreExample.DataTable.Module.Migrations
     {
         public int Create()
         {
-            SchemaBuilder.CreateMapIndexTable(nameof(BookIndex), table =>
+            SchemaBuilder.CreateMapIndexTable<BookIndex>(table =>
             {
                 table.Column<string>(nameof(BookIndex.Author));
                 table.Column<string>(nameof(BookIndex.Title));
