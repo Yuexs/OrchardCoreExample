@@ -1,6 +1,6 @@
 # OrchardCoreExample
 
-OrchardCore应用示例 更新orchardcore版本引用为1.1.0
+OrchardCore应用示例 更新orchardcore版本引用为1.3.0 只支持 dotnet 6.0
 
 ## 示例说明
 
