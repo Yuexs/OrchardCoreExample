@@ -1,0 +1,70 @@
+﻿@model AliYunSecurityTokenServiceSettingViewModel
+
+<h3>@T["阿里云STS参数设置"]</h3>
+
+<style asp-name="codemirror"></style>
+<script asp-name="codemirror" depends-on="admin" at="Foot"></script>
+<script asp-name="codemirror-addon-display-autorefresh" at="Foot"></script>
+<script asp-name="codemirror-mode-javascript" at="Foot"></script>
+
+<div class="form-group row" asp-validation-class-for="AccessKeyId">
+    <div class="col-lg">
+        <label asp-for="AccessKeyId">@T["AccessKeyId"]</label>
+        <input asp-for="AccessKeyId" class="form-control" autocomplete="off"/>
+        <span asp-validation-for="AccessKeyId"></span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="AccessKeySecret">
+    <div class="col-lg">
+        <label asp-for="AccessKeySecret">@T["AccessKeySecret"]</label>
+        <input asp-for="AccessKeySecret" class="form-control" value="@Model.AccessKeySecret" autocomplete="off"/>
+        <span asp-validation-for="AccessKeySecret"></span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="BucketName">
+    <div class="col-lg">
+        <label asp-for="BucketName">@T["存储空间名称"]</label>
+        <input asp-for="BucketName" class="form-control" value="@Model.BucketName" autocomplete="off"/>
+        <span asp-validation-for="BucketName"></span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="RegionName">
+    <div class="col-lg">
+        <label asp-for="RegionName">@T["地域名称"]</label>
+        <input asp-for="RegionName" class="form-control" value="@Model.RegionName" autocomplete="off"/>
+        <span asp-validation-for="RegionName"></span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="RoleArn">
+    <div class="col-lg">
+        <label asp-for="RoleArn">@T["RAM角色ARN"]</label>
+        <input asp-for="RoleArn" class="form-control" value="@Model.RoleArn" autocomplete="off"/>
+        <span asp-validation-for="RoleArn"></span>
+    </div>
+</div>
+
+<div class="form-group row" asp-validation-class-for="Policy">
+    <div class="col-lg">
+        <label asp-for="Policy">@T["授权策略"]</label>
+        <textarea asp-for="Policy" class="form-control mb-2" rows="20"></textarea>
+        <span asp-validation-for="Policy"></span>
+    </div>
+</div>
+
+<script at="Foot">
+    $(function() {
+        var textArea = document.getElementById('@Html.IdFor(x => x.Policy)');
+        var editor = CodeMirror.fromTextArea(textArea,
+            {
+                autoRefresh: true,
+                lineNumbers: true,
+                styleActiveLine: true,
+                matchBrackets: true,
+                mode: { name: "javascript" },
+            });
+    });
+</script>
