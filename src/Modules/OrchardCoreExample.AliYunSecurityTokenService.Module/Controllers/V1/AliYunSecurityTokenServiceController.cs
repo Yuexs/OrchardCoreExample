@@ -3,7 +3,7 @@ using OrchardCoreExample.AliYunSecurityTokenService.Module.Permissions;
 using OrchardCoreExample.AliYunSecurityTokenService.Module.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
+using OrchardCoreExample.AliYunSecurityTokenService.Module.Models;
 
 namespace OrchardCoreExample.AliYunSecurityTokenService.Module.Controllers.V1
 {
@@ -42,14 +42,15 @@ namespace OrchardCoreExample.AliYunSecurityTokenService.Module.Controllers.V1
         /// <param name="param"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> GetSecurityTokenService([FromBody] JObject param)
+        public async Task<IActionResult> GetSecurityTokenService([FromBody] SecurityTokenServiceParamModel param)
         {
             if (!await _authorizationService.AuthorizeAsync(User, AliYunSecurityTokenServicePermission.AliYunSecurityTokenServiceAccess))
             {
                 return Unauthorized();
             }
-            
-            var securityToken = _aliYunSecurityTokenService.GetSecurityTokenService(param["directory"].Value<string>(), param["roleSessionName"].Value<string>());
+
+            var securityToken =
+                _aliYunSecurityTokenService.GetSecurityTokenService(param.Directory, param.RoleSessionName);
             return Json(securityToken);
         }
 
