@@ -14,3 +14,4 @@ OrchardCore应用示例 更新orchardcore版本引用为1.3.0 只支持 dotnet 6
 |[OrchardCoreExample.WeCharMiniProgram.Module](src/Modules/OrchardCoreExample.WeCharMiniProgram.Module)		|微信小程序后端实现|包含用户信息授权,解密手机号等,加入了OpenId权限
 |[OrchardCore.Swagger.Abstractions](src/Modules/OrchardCore.Swagger.Abstractions)		|Swagger.Abstractions|Swagger.Abstractions
 |[OrchardCore.Swagger](src/Modules/OrchardCore.Swagger)		|Swagger|Swagger
+|[OrchardCore.Swagger](src/Modules/OrchardCoreExample.AliYunSecurityTokenService.Module)		|示例阿里云STS授权模块|示例阿里云STS授权
