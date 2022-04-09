@@ -15,3 +15,4 @@ OrchardCore应用示例 更新orchardcore版本引用为1.3.0 只支持 dotnet 6
 |[OrchardCore.Swagger.Abstractions](src/Modules/OrchardCore.Swagger.Abstractions)		|Swagger.Abstractions|Swagger.Abstractions
 |[OrchardCore.Swagger](src/Modules/OrchardCore.Swagger)		|Swagger|Swagger
 |[OrchardCoreExample.AliYunSecurityTokenService.Module](src/Modules/OrchardCoreExample.AliYunSecurityTokenService.Module)		|示例阿里云STS授权模块|示例阿里云STS授权
+|[AliYunSecurityTokenServiceExample](Examples/AliYunSecurityTokenServiceExample)		|阿里云STS授权模块客户端示例|示例使用OrchardCodeOpenId授权,获取阿里云STS授权
