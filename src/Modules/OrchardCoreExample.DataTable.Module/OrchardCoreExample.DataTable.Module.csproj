@@ -10,10 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="1.3.0" />
-    <PackageReference Include="OrchardCore.Data.YesSql.Abstractions" Version="1.3.0" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.3.0" />
-    <PackageReference Include="OrchardCore.Navigation" Version="1.3.0" />
+    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="1.4.0" />
+    <PackageReference Include="OrchardCore.Data.YesSql.Abstractions" Version="1.4.0" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.4.0" />
+    <PackageReference Include="OrchardCore.Navigation" Version="1.4.0" />
   </ItemGroup>
 
 </Project>
