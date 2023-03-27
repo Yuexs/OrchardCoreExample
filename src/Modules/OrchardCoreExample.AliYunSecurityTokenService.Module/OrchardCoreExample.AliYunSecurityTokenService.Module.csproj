@@ -11,10 +11,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="aliyun-net-sdk-sts" Version="3.1.0" />
-		<PackageReference Include="OrchardCore.DisplayManagement" Version="1.4.0" />
-		<PackageReference Include="OrchardCore.Module.Targets" Version="1.4.0" />
-		<PackageReference Include="OrchardCore.Navigation.Core" Version="1.4.0" />
-		<PackageReference Include="OrchardCore.ResourceManagement" Version="1.4.0" />
+		<PackageReference Include="OrchardCore.DisplayManagement" Version="1.5.0" />
+		<PackageReference Include="OrchardCore.Module.Targets" Version="1.5.0" />
+		<PackageReference Include="OrchardCore.Navigation.Core" Version="1.5.0" />
+		<PackageReference Include="OrchardCore.ResourceManagement" Version="1.5.0" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -10,12 +10,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Navigation.Core" Version="1.4.0" />
-    <PackageReference Include="Senparc.CO2NET" Version="2.1.2" />
-    <PackageReference Include="Senparc.Weixin" Version="6.15.5" />
-    <PackageReference Include="Senparc.Weixin.WxOpen" Version="3.15.7" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Navigation.Core" Version="1.5.0" />
+    <PackageReference Include="Senparc.CO2NET" Version="2.1.7.3" />
+    <PackageReference Include="Senparc.Weixin" Version="6.15.8.7" />
+    <PackageReference Include="Senparc.Weixin.WxOpen" Version="3.15.13" />
   </ItemGroup>
 
 </Project>
